@@ -1,3 +1,171 @@
+:root {
+  --theme-accent: #ffc700;
+  --theme-main: #fff;
+  --theme-bgd: #222527;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+header {
+  padding: 32px 0 72px 0;
+}
+
+.about-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 36%;
+}
+
+.social-link {
+  margin-bottom: 26px;
+}
+
+.social-link svg {
+  fill: var(--theme-accent);
+}
+
+.about {
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/space.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.about-name {
+  color: var(--theme-accent);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 60px;
+  margin-bottom: 24px;
+}
+
+.about-profession {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  color: var(--theme-main);
+}
+
+.about-positions {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-accent);
+  margin-bottom: 8px;
+  margin-left: 18px;
+  list-style: disc;
+}
+
+.bout-position-text {
+  color: var(--theme-main);
+}
+
+.about-button {
+  border: 0;
+  outline: 0;
+  margin-top: 40px;
+  padding: 16px 32px 16px 32px;
+  background: var(--theme-accent);
+  border-radius: 38px;
+  cursor: pointer;
+}
+
+.about-discription {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-content-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.darth-vader-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.death-star-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  bottom: -96px;
+  opacity: 0.4;
+}
+
+.achivements {
+  padding: 60px 0;
+  background-color: var(--theme-bgd);
+}
+
+.achivements-header {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-accent);
+  margin-bottom: 64px;
+}
+
+.achivements-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.achivements-item-header {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-accent);
+  margin: 38px 0 4px 0;
+}
+
+.achivements-item-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+}
+
+.achivements-item {
+  width: 25%;
 }
