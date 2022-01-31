@@ -174,3 +174,64 @@ header {
   width: 60px;
   height: 60px;
 }
+
+.codex {
+  padding: 186px 0;
+  background-image: url("../img/space.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.codex .container {
+  flex-direction: row;
+}
+
+.codex-motto {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 60px;
+  color: var(--theme-accent);
+}
+
+.codex-left-side,
+.codex-right-side {
+  width: 50%;
+}
+
+.codex-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-accent);
+  margin-bottom: 32px;
+}
+
+.codex-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+  margin-bottom: 4px;
+}
+
+.codex-text-last {
+  margin-bottom: 60px;
+}
+
+.footer {
+  padding: 60px 0 66px 0;
+  background-color: var(--theme-bgd);
+}
+
+.footer .container {
+  align-items: center;
+}
+
+.footer-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+  text-align: center;
+  width: 740px;
+  margin-bottom: 54px;
+}
