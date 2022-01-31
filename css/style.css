@@ -2,6 +2,8 @@
   --theme-accent: #ffc700;
   --theme-main: #fff;
   --theme-bgd: #222527;
+
+  --theme-modal-bgd: #e5e5e5;
 }
 
 html,
@@ -234,4 +236,120 @@ header {
   text-align: center;
   width: 740px;
   margin-bottom: 54px;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--theme-modal-bgd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal-form {
+  padding: 40px 80px;
+  background-color: var(--theme-bgd);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-form-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-accent);
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.modal-form-text {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--theme-main);
+  margin-bottom: 32px;
+}
+
+.modal-form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.modal-form-field-label {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  color: var(--theme-main);
+}
+
+.modal-form-name,
+.modal-form-email {
+  width: 440px;
+  height: 40px;
+  border: 1px solid var(--theme-main);
+  outline: none;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.modal-form-submit {
+  border: 0;
+  outline: 0;
+  padding: 16px 32px 16px 32px;
+  background: var(--theme-accent);
+  border-radius: 38px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.modal-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-success {
+  padding: 80px 40px 88px 40px;
+  background-color: var(--theme-bgd);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+}
+
+.modal-success-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-accent);
+  margin-bottom: 112px;
+  text-align: center;
+}
+
+.modal-success-text {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--theme-main);
+  margin-bottom: 36px;
 }
