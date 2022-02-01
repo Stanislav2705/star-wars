@@ -3,7 +3,8 @@
   --theme-main: #fff;
   --theme-bgd: #222527;
 
-  --theme-modal-bgd: #e5e5e5;
+  --theme-modal-bgd: rgb(239 236 236 / 90%);
+  --theme-btn-text: #060803;
 }
 
 html,
@@ -29,6 +30,9 @@ body {
 
 header {
   padding: 32px 0 72px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .about-social {
@@ -95,6 +99,7 @@ header {
   background: var(--theme-accent);
   border-radius: 38px;
   cursor: pointer;
+  color: var(--theme-btn-text);
 }
 
 .about-discription {
@@ -320,6 +325,7 @@ header {
   border-radius: 38px;
   cursor: pointer;
   margin-top: 16px;
+  color: var(--theme-btn-text);
 }
 
 .modal-active {
@@ -352,4 +358,20 @@ header {
   text-align: center;
   color: var(--theme-main);
   margin-bottom: 36px;
+}
+
+.about--light,
+.codex--light {
+  background-image: url("../img/stardust.jpg");
+}
+
+.logo svg,
+.achivements-icon svg,
+.footer svg,
+.modal-success-icon svg {
+  fill: var(--theme-accent);
+}
+
+.close-icon svg {
+  fill: var(--theme-main);
 }
