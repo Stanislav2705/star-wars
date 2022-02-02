@@ -28,6 +28,7 @@ function switchTheme () {
         element.style.setProperty('--theme-bgd', lightTheme.bgd);
         element.style.setProperty('--theme-modal-bgd', lightTheme.modalBgd);
         element.style.setProperty('--theme-btn-text', lightTheme.btnText);
+        element.style.setProperty('--theme-moto-text', '#7A7982');
 
         aboutMeContainer.classList.add('about--light');
         factsContainer.classList.add('codex--light');
@@ -39,6 +40,7 @@ function switchTheme () {
         element.style.setProperty('--theme-bgd', darkTheme.bgd);
         element.style.setProperty('--theme-modal-bgd', darkTheme.modalBgd);
         element.style.setProperty('--theme-btn-text', darkTheme.btnText);
+        element.style.setProperty('--theme-moto-text', '#FFF');
 
         aboutMeContainer.classList.remove('about--light');
         factsContainer.classList.remove('codex--light');
